@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+   
+
+    <div class="container">
+        <h1>Number Guessing Game</h1>
+        
+        <!-- Instructions Section -->
+        <section>
+            <h2>Instructions</h2>
+            <p>Guess a random number between 1 and 100. Enter your guess in the input field and click "Submit" to receive feedback.</p>
+        </section>
+        
+        <!-- Game Interface Section -->
+        <section>
+            <label for="guessInput">Enter your guess:</label>
+            <input type="number" id="guessInput" min="1" max="100">
+            <button id="submitGuess" class="btn btn-primary">Submit</button>
+            <p id="feedbackArea"></p>
+        </section>
+    </div>
+
+    <!-- Bootstrap JS and your custom JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="numbergame.js"></script>
+</body>
+</html>
